@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { register } from './AxiosLogin';
 import '../App.css';
 
@@ -75,6 +75,7 @@ class Register extends Component {
             <button type="submit" style={buttonStyle}>
               Register User
             </button>
+            <Link to='/login'><button style={buttonStyle}>Cancel</button></Link>
           </div>
         </form>
       </div>
@@ -101,4 +102,5 @@ border: '#232A34 1px solid',
 borderRadius: '5px',
 padding: '10px',
 margin: '5px',
+cursor: 'pointer',
 }

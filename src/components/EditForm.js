@@ -62,11 +62,24 @@ import {Link} from 'react-router-dom';
     
     
     }
+
     editPost = () => {
-      console.log(this.props.post.id)
-      this.props.updateFoodie(this.props.post.id)
-      
+      const changes = {
+        restaurantName: this.state.restaurantName,
+        photo: this.state.photo,
+        foodType: this.state.foodType,
+        comments:this.state.comments,
+        rating: this.state.rating,
+        price: this.state.price,
+        date:this.state.date,
+        restaurantInfo: this.state.restaurantInfo,
+        favorite: this.state.favorite,
+        }
+        
+        this.props.updateFoodie(this.state.id, changes)
     }
+    
+  
     
    
   

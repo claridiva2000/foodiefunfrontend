@@ -175,14 +175,15 @@ const formStyle = {
   margin: '0px',
   height: '800px'
 };
-
+  
 const submitButtonStyle = {
   color: '#232A34',
   background: '#F1F3D7',
   border: '#232A34 1px solid',
   borderRadius: '5px',
   padding: '10px',
-  margin: '5px'
+  margin: '5px',
+  cursor:'pointer'
 };
 const buttonStyle = {
   color: '#232A34',
