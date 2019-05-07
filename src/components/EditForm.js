@@ -58,12 +58,13 @@ import {Link} from 'react-router-dom';
     // }
 
     UpdateHandler = e =>{
-      e.preventDefault();
+      
     
     
     }
 
-    editPost = () => {
+    editPost = (e) => {
+      
       const changes = {
         restaurantName: this.state.restaurantName,
         photo: this.state.photo,
@@ -75,7 +76,7 @@ import {Link} from 'react-router-dom';
         restaurantInfo: this.state.restaurantInfo,
         favorite: this.state.favorite,
         }
-        
+        e.preventDefault();
         this.props.updateFoodie(this.state.id, changes)
     }
     
